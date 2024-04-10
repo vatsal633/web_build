@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+    width: 53px;
+    animation-name:anime;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+    position: relative;
+    display: none;
+    animation-fill-mode:both;
+    animation-timing-function: ease-in-out;
+}
+
+
+.nav-item:hover{
+    background-color:#007a80;
+}
+
+.form-inline{
+    justify-content: flex-end;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+@keyframes anime{
+    0%{
+       transform:scale(0,0);
+       transform: rotateY(0deg);
+    }
+
+    25%{
+        transform:scale(0.2,0.2);
+    }
+
+    50%{
+        
+
+    }
+
+    75%{
+        
+  
+    }
+
+    100%{
+        transform: scale(1,1);
+        transform: rotateY(150deg);
+    }
+}
