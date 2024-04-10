@@ -77,6 +77,16 @@ li:hover{
 }
 
 
+fieldset{
+    width: 19%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
 #panel{
     display: none;
 }
