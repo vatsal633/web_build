@@ -1,35 +1,57 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    font-family: "Poppins", sans-serif;
 }
 
-img{
-    width: 53px;
+ul{
+    border: solid 1px red;
+}
+
+li{
+    padding:6px;
+}
+
+li:hover{
+    background-color: white;
+}
+
+#logo{
+    animation-name: anime;
+}
+#panel{
+    /* border:solid 0.5px black;  */
+    background-color: #e4e4e4;
+    padding:3px;
+}
+
+
+
+.slide{
+    width: 98%; 
+    margin: auto;
+    margin-top: 14px; 
+}
+
+#flip{
+    
+    text-align: center;
+    font-size: 2rem;
+}
+
+.img1{
+    width: 60px;
     animation-name:anime;
     animation-delay: 0.3s;
     animation-duration: 3s;
     position: relative;
-    display: none;
+    /* display: none; */
     animation-fill-mode:both;
     animation-timing-function: ease-in-out;
-}
-
-
-.nav-item:hover{
-    background-color:#007a80;
-}
-
-.form-inline{
-    justify-content: flex-end;
-}
-
-.navbar{
-    justify-content: space-between;
 }
 
 @keyframes anime{
     0%{
        transform:scale(0,0);
+       
        transform: rotateY(0deg);
     }
 
@@ -50,5 +72,11 @@ img{
     100%{
         transform: scale(1,1);
         transform: rotateY(150deg);
+        box-shadow: 0px 0px 25px white;
     }
+}
+
+
+#panel{
+    display: none;
 }
