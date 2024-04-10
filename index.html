@@ -2,103 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <title>My website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+            <a href="#" class="navbar-brand logo-drag">
+                <img id="img" class="img1 " src="8_1sasa11.jpg" alt="Avatar Logo" class="rounded-pill">
+            </a>
+            <div class="container-fluid">
+                <ul class="navbar-nav drag" id="sort">
+                    <li class="nav-item m-6 ui-state-default">
+                        <a class="nav-link active" href="#">home</a>
+                    </li>
+                    <li class="nav-item m-6 ui-state-default">
+                        <a class="nav-link " href="#">About us</a>
+                    </li>
+                    <li class="nav-item m-6 ui-state-default">
+                        <a class="nav-link " href="#">Services</a>
+                    </li>
+                    <li class="nav-item m-6 ui-state-default">
+                        <a class="nav-link " href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" id="sort2">
+                    <div><input class="form-control me-2" type="text" placeholder="Search"></div>
+                    <div>
 
-  <header>
-    <nav class="navbar navbar-expand-sm bg-dark">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
 
-      <img src="8_1sasa11.jpg" alt="">
+    <main>
+        <!-- carousel -->
+        <div class="carousel slide" id="demo" data-bs-ride="carousel">
+            <!-- buttons -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
 
-      <div class="">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.kentfaith.com/image/catalog/blog/279/279.jpg" alt="Los Angeles"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://umbrellacreative.com.au/wp-content/uploads/2020/01/hide-the-pain-harold-why-you-should-not-use-stock-photos.jpg"
+                        alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://umbrellacreative.com.au/wp-content/uploads/2020/01/hide-the-pain-harold-why-you-should-not-use-stock-photos.jpg"
+                        alt="New York" class="d-block w-100">
+                </div>
+            </div>
 
-        <!-- Links -->
-        <ul class="navbar-nav container-wraper " id="sort">
-          <li class="nav-item drag ui-state-default">
-            <a class="nav-link text-white" href="#">home</a>
-          </li>
-          <li class="nav-item drag ui-state-default">
-            <a class="nav-link text-white" href="#">about</a>
-          </li>
-          <li class="nav-item drag ui-state-default">
-            <a class="nav-link text-white" href="#">contact</a>
-          </li>
 
-          <li class="nav-item drag ui-state-default">
-            <a class="nav-link text-white" href="#">services</a>
-          </li>
-        </ul>
-      </div>
 
-      <form class="form-inline" id="serch">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </nav>
-  </header>
-
-  <main>
-
-    <div class="instructions">
-      <div class="in-header">
-        <h2>Some instructions</h2>
-      </div>
-
-      <div id="accordion">
-        <h3>Instruction 1</h3>
-        <div>
-          <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus,
-            molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra
-            leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-      </div>
-    </div>
-  </main>
+        <div class="slide">
+            <div id="flip" class="bg-primary text-white" style="cursor: pointer;">click for information</div>
+            <div id="panel" class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga labore nulla
+                temporibus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus rerum fugiat, maiores
+                ratione ipsum obcaecati et amet culpa enim excepturi quia velit, omnis ullam nostrum porro neque illum?
+                Quas at modi impedit vel repellendus officia nisi porro totam illo, obcaecati accusamus animi quam ullam
+                voluptatibus maxime ab similique nam omnis.
+
+                <fieldset>
+                    <legend>Select a Location: </legend>
+                    <label for="radio-1">I Agree</label>
+                    <input type="radio" name="radio-1" id="radio-1">
+                    <label for="radio-2">I Dont Agree</label>
+                    <input type="radio" name="radio-1" id="radio-2">
+                  </fieldset>
+            </div>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle();
+            })
 
 
-  <script src="script.js"></script>
-  <script>
+            $(function () {
+                $("#sort").sortable({
+                    placeholder: "ui-state-highlight"
+                });
+                $("#sort").disableSelection();
 
-    // jquery script
-    $(document).ready(function () {
-      //only move in x axis
-      // $(".drag").draggable({ axis: "x" });
-      // //only move in its parant containe
-      // $(".drag").draggable({ containment: container - wraper, scroll: false });
+            })
 
+            $(function () {
+                $("#sort2").sortable();
+                $("#sort2").disableSelection();
+                $(".drag").draggable({ axis: "x", containment: "#containment-wrapper", scroll: false });
 
-      $(function () {
-        $("#sort").sortable();
-        $("#sort").disableSelection();
-      });
-
-
-      //code for search bar
-
-      $(function () {
-        $(".form-control").draggable;
-        $("#serch").disableSelection();
-      })
+                $( "input" ).checkboxradio();
 
 
-      $("img").show();
+                $(".logo-drag").draggable();
 
-      $(function(){
-        $("#accordion").accordion({
-          collapsible: true
-        });
-      })
-    })
-  </script>
+            })
+
+            //redio button code
+
+            
+
+        })
+    </script>
 </body>
 
 </html>
